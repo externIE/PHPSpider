@@ -108,7 +108,7 @@
 		public function saveToFile($basePath){
 			$doc   = $this->buildDocument();
 			$path  = $basePath;
-			$path .= "/".$this->mDate.$this->mTitle.".markdown";
+			$path .= "/".$this->mDate."-".$this->mTitle.".markdown";
 			$file  = fopen($path,"w");
 			if($file){
 				fwrite($file,$doc);
