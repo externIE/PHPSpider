@@ -90,5 +90,7 @@
 		$page = new PageParser($url,$category);
 		echo "\n";
 		echo $page;
+		$page->saveToFile("./_post"); 
+		exec("ls");
 	}
 ?>

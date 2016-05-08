@@ -36,8 +36,8 @@
 		public function __tostring(){
 			return $this->docFrame->getDoc();
 		}
-		public function saveToFile(){
-			$docFrame->saveToFile();
+		public function saveToFile($basePath){
+			$this->docFrame->saveToFile($basePath);
 		}
 		private function getTitle(){
 			$title  = trim($this->html->find("div.acontent h3",0)->innertext);
@@ -67,7 +67,9 @@
 			// $strTime = $this->html->find("div.dinfo p",0)->plaintext;
 			// $strTime = strip_tags($strTime);//去除HTML&&PHP代码
 			// $arrInfo = explode(" ",$strTime);
-			return trim($this->findInfo("div.dinfo p",0,2));
+			$formatDate =  trim($this->findInfo("div.dinfo p",0,2));
+			$formatDate = str_replace(array("讲座时间",":","年","月","日"), array("","","-","-",""), $formatDate);
+			return $formatDate;
 		}
 		private function getTime(){
 			// $strTime = $this->html->find("div.dinfo p",0)->plaintext;

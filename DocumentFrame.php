@@ -105,11 +105,19 @@
 			return $this->buildDocument();
 		}
 
-		public function saveToFile(){
-			$doc = $this->buildDocument();
-			$file = fopen("_posts/date-name.markdown","w");
-			fwrite($file,$doc);
-			fclose($file);
+		public function saveToFile($basePath){
+			$doc   = $this->buildDocument();
+			$path  = $basePath;
+			$path .= "/".$this->mDate.$this->mTitle.".markdown";
+			$file  = fopen($path,"w");
+			if($file){
+				fwrite($file,$doc);
+				fclose($file);
+				echo "保存成功\n";
+			}else{
+				echo "保存失败\n";
+			}
+			
 		}
 	}
 ?>
