@@ -5,13 +5,16 @@
 	date_default_timezone_set('prc');
 	spider();
 	function spider(){
-		$mainURL = "http://news.cqu.edu.cn/newsv2/info-24.html";//校园网新闻讲座首页
-		$items = getAllItemsURL($mainURL);
-		crawlerAllItemPages($items);
-		// testFunc();
+		// $mainURL = "http://news.cqu.edu.cn/newsv2/info-24.html";//校园网新闻讲座首页
+		// $items = getAllItemsURL($mainURL);
+		// crawlerAllItemPages($items);
+		testFunc();
 	}
 	function testFunc(){//测试代码
-		echo time();
+		exec("git add .");
+		exec("git commit -m \"newspost\"");
+		exec("git push");
+		echo "成功！\n";
 	}
 	function testFunc2($test){
 		$test--;
@@ -91,6 +94,6 @@
 		echo "\n";
 		echo $page;
 		$page->saveToFile("./_post"); 
-		exec("ls");
+		
 	}
 ?>
