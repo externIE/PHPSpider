@@ -123,10 +123,10 @@
 		private function getSpeakerImgSrc(){
 			$eImg = $this->html->find("div.acontent img",0);
 			if ($eImg) {
-				if(stristr($eImg->src,"http://news.cqu.edu.cn/"){
+				if(stristr($eImg->src,"http://news.cqu.edu.cn")){
 					return $eImg->src;
 				}else{
-					return "http://news.cqu.edu.cn/".$eImg->src;
+					return "http://news.cqu.edu.cn".$eImg->src;
 				}
 				
 			}else{

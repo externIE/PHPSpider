@@ -1,0 +1,23 @@
+---
+layout: 			post
+title:       	  "翻转课堂教学设计与实践"
+dtitle:      	  "“翻转课堂教学设计与实践”工作坊"
+time: 		  	  "14时30分"
+address:	  	  "主教330"
+campus:	  	  "undefined"
+speaker:	   	  "何聚厚"
+speaker-profile: ""
+speaker-img:	  "http://news.cqu.edu.cn/newsv2/uploadfile/2016/0505/20160505092706568.jpg"
+organizer:		  "教师教学发展中心"
+co-organizer:	  ""
+category:		  "教师教学发展工作坊"
+author:		  "教师教学发展中心 黄璐"
+editorInCharge:  "刘皓"
+---
+（1）“互联网+”学习对教师教学的挑战与机遇。
+  （2）深度理解翻转课堂教学：为什么现代信息化环境需要教学模式的变革。
+  （3）教师实施翻转课堂教学时面临的三个主要问题：
+      A.如何基于“教学重构”设计翻转课堂教学（包括教学目标、教学内容和课堂教学活动设计）；
+      B.如何基于学科特点选择合适的翻转课堂教学策略；
+      C.个人如何自主制作教学微视频。
+  （4）我们的经验分享。
